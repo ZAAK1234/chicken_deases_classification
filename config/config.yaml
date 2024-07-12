@@ -1,0 +1,14 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_url: https://raw.githubusercontent.com/ZAAK1234/chicken_deases_classification/main/Chicken-fecal-images.zip
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
+
+
+
+#'''for large size zip file we have to note that direct github link didn't work so for that
+ # we have to change in url
+#  1.  github.com to raw.githubusercontent.com
+ # 2. remove /blob from url
