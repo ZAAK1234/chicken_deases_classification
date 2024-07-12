@@ -10,3 +10,9 @@
 6. Update the components
 7. Update the Pipeline
 8. Update the dvc.yaml
+
+
+
+
+# to show graph
+tensorboard --logdir artifacts/prepare_callbacks/tensorboard_log_dir
