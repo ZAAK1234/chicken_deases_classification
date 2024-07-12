@@ -1,1 +1,8 @@
-key: val
+AUGMENTATION: True
+IMAGE_SIZE: [224,224,3] # as per vgg 16 model
+BATCH_SIZE: 16
+INCLUDE_TOP: False
+EPOCHS: 1 # when we try to build for my model then increase epochs here just for practice purpuse
+CLASSES: 2 # change as is your classes
+WEIGHTS: imagenet
+LEARNING_RATE: 0.01
