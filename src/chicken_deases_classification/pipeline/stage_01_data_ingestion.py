@@ -1,9 +1,11 @@
+import sys
+sys.path.append('F:\FAHIM\Data Science\y_ml_project\p2')
 from src.chicken_deases_classification.config.configuration import ConfigurationManager
 from src.chicken_deases_classification.componenets.data_ingestion import DataIngestion
 from src.chicken_deases_classification import logger
 from src.chicken_deases_classification.exception import CustomException
 from src.chicken_deases_classification.exception import error_message_detail
-import sys
+
 STAGE_NAME = 'Data Ingestion stage'
 
 

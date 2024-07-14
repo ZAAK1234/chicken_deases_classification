@@ -2,6 +2,7 @@ from src.chicken_deases_classification import logger
 from src.chicken_deases_classification.pipeline.stage_01_data_ingestion import DataIngestionTraininPipeline
 from src.chicken_deases_classification.pipeline.stage_02_prepare_base_model import PrepareBaseModelTraininPipeline
 from src.chicken_deases_classification.pipeline.stage_03_training import ModelTrainingPipeline
+from src.chicken_deases_classification.pipeline.stage_04_evaluation import ModelEvaluationPipeline
 from src.chicken_deases_classification.exception import CustomException
 from src.chicken_deases_classification.exception import error_message_detail
 import sys
@@ -38,3 +39,18 @@ try:
 except CustomException as e:
     logger.exception(e)
     raise error_message_detail(e, sys)
+
+
+if __name__ == '__main__':
+    try:
+        logger.info(f'>>>>> stage {STAGE_NAME} started <<<')
+        obj =ModelEvaluationPipeline()
+        obj.main()
+        logger.info(f'>>>>> stage {STAGE_NAME} finished <<<')
+    except CustomException as e:
+        logger.exception(e)
+        raise error_message_detail(e,sys)
+
+
+
+
